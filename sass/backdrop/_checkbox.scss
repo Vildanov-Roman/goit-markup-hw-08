@@ -1,0 +1,114 @@
+.checkbox-field {
+    margin-bottom: 30px;
+}
+
+.checkbox {
+    position: absolute;
+}
+
+.checkbox-input {
+    margin-right: 7px;
+}
+
+.checkbox-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.checkbox-icon {
+    fill: transparent;
+}
+
+.checkbox-text span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--second-text-color);
+    border-radius: 3px;
+    margin-right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.checkbox-input:focus + .checkbox-text span {
+    border-color: var(--bacground-hover-icon);
+    
+}
+
+.checkbox-input:checked + .checkbox-text span {
+    background-color: var(--bacground-hover-icon);   
+}
+
+
+.checkbox-input:checked + .checkbox-text .checkbox-icon {
+    fill: var(--bacground-color-icon);
+} 
+/* 
+.checkbox-text::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--second-text-color);
+    border-radius: 3px;
+    margin-right: 7px;
+}
+
+.checkbox-input:checked + .checkbox-text::before {
+    background-color: var(--bacground-hover-icon);
+    border: none;
+    background-image: url(../img/icon-agree.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+.checkbox-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--web-txt-color);
+    margin-left: 5px;
+    &:focus {
+        color: var(--activ-btn-color);
+    }
+}
+
+
+
+.madal-btn {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--txt-btn);
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background-color: var(--main-btn-color);
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin: 0 auto;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+        background-color: var(--activ-btn-color);
+        outline: none;
+        }
+}
+

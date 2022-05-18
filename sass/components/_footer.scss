@@ -1,0 +1,194 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--background-footer);
+}
+
+.contacts {
+    display: flex;
+    align-items: baseline;
+}
+
+.addresses {
+    margin-right: 70px;
+}
+
+.soc {    
+    margin-right: 93px;
+}
+
+.footer-logo {
+    display: inline-block;
+    color: var(--web-txt-color);
+    margin-bottom: 20px;
+    width: 145px;
+    height: 4.67;
+
+    font-family: 'Raleway', Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 0.84;    
+    letter-spacing: 0.03em;
+}
+
+.addresses__address-link {
+    font-family: 'Roboto', Tahoma, sans-sarif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    font-style: none;
+    letter-spacing: 0.03em;
+    color: var(--footer-address-color);
+    margin-bottom: 9px;
+}
+
+.addresses__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.addresses__link {
+    font-family: 'Roboto', Tahoma, sans-sarif;
+    font-weight: 400;
+    line-height: 1.71;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: var(--footer-contact-color);
+    margin-bottom: 9px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: var(--main-btn-color);
+    }
+}
+
+.addresses__logo-studio {
+    font-family: 'Raleway', Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 0.84;    
+    letter-spacing: 0.03em;
+    color: var(--studio-txt-footer);
+}
+
+.soc__list {
+    display: flex;
+    justify-content: center;
+}
+
+.soc__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--background-color);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.soc__item {
+    width: 44px;
+    height: 44px;    
+    & + & {
+        margin-left: 10px;
+    }
+}
+
+.soc__link {
+    width: 100%;
+    height: 100%;
+    color: var(--background-color);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: var(--bacground-hover-icon);
+    }
+}
+
+.soc__icon {
+    fill: currentColor;
+}
+
+.sub {
+    margin: 0 auto;
+}
+
+.sub__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--hero-text-color);
+    margin-bottom: 20px;
+}
+
+.sub__list {
+    display: flex;
+    justify-content: center;
+}
+
+.sub__item {
+    position: relative;
+}
+
+.sub__icon {
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: var(--background-color);
+}
+
+.sub__input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: var(--background-footer);
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    color: var(--studio-txt-footer);
+}
+
+.sub__button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--txt-btn);
+    padding-left: 29px;
+    width: 200px;
+    height: 50px;
+    background-color: var(--main-btn-color);
+    border-radius: 4px; 
+    border: none; 
+    
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+

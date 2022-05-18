@@ -1,0 +1,47 @@
+.achivements {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.achivements__list {
+    display: flex;
+    justify-content: center;
+}
+
+.achivement__icon {
+    width: 270px;
+    height: 120px;
+    background-color: var(--bacground-color-icon);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.achivements__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.achivements__div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.achivements__item--title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--second-text-color); 
+    margin-bottom: 10px;   
+}
+
+.achivements__item--text { 
+    font-size: 14px;   
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    max-width: 270px;
+}
