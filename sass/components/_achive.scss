@@ -1,21 +1,39 @@
 .achivements {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
-.achivements__list {
-    display: flex;
-    justify-content: center;
+.achivements__list {    
+    margin-bottom: -30px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -30px;
+    }
+}
+
+.achivements__item {
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        width: calc(100% / 2 - 30px);
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc(100% / 4 - 30px);
+    }
 }
 
 .achivement__icon {
-    width: 270px;
+    width: 100%;
     height: 120px;
     background-color: var(--bacground-color-icon);
     border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 }
 
 .achivements__item:not(:last-child) {
@@ -23,25 +41,33 @@
 }
 
 .achivements__div {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     margin-bottom: 30px;
 }
 
 .achivements__item--title {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font(null, 14px, 1.14, 0.03em);
+    // font-size: 14px;
+    // font-weight: 700;
+    // line-height: 1.14;
+    // letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--second-text-color); 
-    margin-bottom: 10px;   
+    margin-bottom: 10px;
+    @media screen and (max-width: 480px) {
+        text-align: center;
+    }       
 }
 
 .achivements__item--text { 
-    font-size: 14px;   
-    line-height: 1.7;
-    letter-spacing: 0.03em;
+    @include font(null, 14px, 1.71, 0.03em);
+    // font-size: 14px;   
+    // line-height: 1.7;
+    // letter-spacing: 0.03em;
     color: var(--main-text-color);
-    max-width: 270px;
+    max-width: 100%;
+    @media screen and (max-width: 480px) {
+        text-align: center;
+    }
 }

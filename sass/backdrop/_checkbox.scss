@@ -25,7 +25,7 @@
     fill: transparent;
 }
 
-.checkbox-text span {
+.checkbox-text .checkbox-span {
     width: 16px;
     height: 15px;
     border: 2px solid var(--second-text-color);
@@ -36,12 +36,12 @@
     justify-content: center;    
 }
 
-.checkbox-input:focus + .checkbox-text span {
+.checkbox-input:focus + .checkbox-text .checkbox-span {
     border-color: var(--bacground-hover-icon);
     
 }
 
-.checkbox-input:checked + .checkbox-text span {
+.checkbox-input:checked + .checkbox-text .checkbox-span {
     background-color: var(--bacground-hover-icon);   
 }
 
