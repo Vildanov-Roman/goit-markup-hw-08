@@ -277,17 +277,12 @@ img {
   font-family: "Roboto", Tahoma, sans-sarif;
   text-transform: uppercase;
   color: var(--hero-text-color);
-  max-width: 696px;
   text-align: center;
-}
-@media screen and (min-width: 480px) {
-  .hero__title {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
-    letter-spacing: 0.06em;
-    min-width: 360px;
-  }
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  max-width: 360px;
 }
 @media screen and (min-width: 768px) {
   .hero__title {
@@ -295,7 +290,18 @@ img {
     font-size: 26px;
     line-height: 1.62;
     letter-spacing: 0.06em;
-    min-width: 360px;
+    max-width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--hero-text-color);
+    max-width: 696px;
   }
 }
 
@@ -396,8 +402,14 @@ img {
 }
 
 .development {
-  padding-top: 0px;
-  padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .development {
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 94px;
+  }
 }
 
 .development__list {
@@ -651,16 +663,38 @@ img {
 }
 
 .contacts {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .contacts .footer__links {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    align-items: baseline;
+    text-align: left;
+  }
 }
 
 .addresses {
-  margin-right: 70px;
+  justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .addresses {
+    margin-right: 70px;
+  }
 }
 
 .soc {
-  margin-right: 93px;
+  justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .soc {
+    margin-right: 93px;
+  }
 }
 
 .footer-logo {
@@ -676,6 +710,10 @@ img {
   letter-spacing: 0.03em;
 }
 
+.addresses__list {
+  margin-bottom: 60px;
+}
+
 .addresses__address-link {
   font-family: "Roboto", Tahoma, sans-sarif;
   font-weight: 400;
@@ -685,11 +723,11 @@ img {
   font-style: none;
   letter-spacing: 0.03em;
   color: var(--footer-address-color);
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .addresses__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .addresses__link {
@@ -720,10 +758,11 @@ img {
 .soc__list {
   display: flex;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .soc__title {
-  font-family: "Roboto";
+  font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -763,12 +802,19 @@ img {
   fill: currentColor;
 }
 
-.sub {
+.sub__list {
+  display: block;
   margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .sub__list {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .sub__title {
-  font-family: "Roboto";
+  font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -778,41 +824,48 @@ img {
   color: var(--hero-text-color);
   margin-bottom: 20px;
 }
-
-.sub__list {
-  display: flex;
-  justify-content: center;
+@media screen and (min-width: 1200px) {
+  .sub__title {
+    margin-left: 0;
+  }
 }
 
 .sub__item {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.sub__icon {
-  position: absolute;
-  right: 28px;
-  top: 50%;
-  transform: translateY(-50%);
-  fill: var(--background-color);
+@media screen and (min-width: 1200px) {
+  .sub__item {
+    position: relative;
+  }
 }
 
 .sub__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--background-footer);
-  margin-right: 12px;
-  width: 358px;
+  width: 450px;
   height: 50px;
-  padding: 15px 16px;
+  padding: 15px 15px;
   color: var(--studio-txt-footer);
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .sub__input {
+    margin-right: 12px;
+    width: 358px;
+    padding: 15px 16px;
+    margin-bottom: 0;
+  }
 }
 
 .sub__button {
-  font-family: "Roboto";
+  font-family: inherit;
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
+  font-size: 14px;
+  line-height: 1.14;
   display: flex;
   align-items: center;
   text-align: center;
@@ -830,6 +883,19 @@ img {
 }
 .sub__button:hover, .sub__button:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.sub__icon {
+  fill: var(--background-color);
+  margin-left: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .sub__icon {
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .checkbox-field {

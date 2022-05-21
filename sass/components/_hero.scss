@@ -35,24 +35,33 @@
     margin: auto;
     margin-top: 0; 
     margin-bottom: 30px;
+
     font-family: 'Roboto', Tahoma, sans-sarif;
-    @media screen and (min-width: 480px) {
-        @include font (900, 26px, 1.62, 00.06em);
-        min-width: 360px;
-    }
+    text-transform: uppercase;
+    color: var(--hero-text-color);   
+    text-align: center;
+
+    @include font (900, 26px, 1.62, 0.06em);
+    max-width: 360px;
+    
     @media screen and (min-width: 768px) {
-        @include font (900, 26px, 1.62, 00.06em);
-        min-width: 360px;
+        @include font (900, 26px, 1.62, 0.06em);
+        max-width: 360px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include font (900, 44px, 1.36, 0.06em);
+        text-transform: uppercase;
+        color: var(--hero-text-color);
+        max-width: 696px;    
+        
     }
     
     // font-weight: 900;
     // font-size: 44px;
     // line-height: 1.37;
     // letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--hero-text-color);
-    max-width: 696px;    
-    text-align: center;
+
 }
 
 .hero__button {
