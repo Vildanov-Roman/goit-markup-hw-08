@@ -5,6 +5,7 @@
     border-right: 1px solid var(--color-border);
     position: relative;
     background-color: var(--background-color);
+    
 }
 
 .projects__link {
@@ -50,7 +51,10 @@
     }
 }
 
-.projects__item {    
+.projects__item {  
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
     @media screen and (min-width: 768px) {
         width: calc(100% / 2 - 30px);
         margin-right: 30px;
@@ -98,6 +102,10 @@
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.projects__description {
+
 }
 
 .projects__description--title {
