@@ -1,6 +1,7 @@
 .achivements {
     padding-top: 60px;
     padding-bottom: 60px;
+    align-items: center;
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
         padding-bottom: 94px;
@@ -36,9 +37,9 @@
     // align-items: center;
 }
 
-.achivements__item:not(:last-child) {
-    margin-right: 30px;
-}
+// .achivements__item:not(:last-child) {
+//     margin-right: 30px;
+// }
 
 .achivements__div {
     // display: flex;

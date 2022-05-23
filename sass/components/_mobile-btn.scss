@@ -1,0 +1,20 @@
+.menu-open-btn {
+    margin-left: auto;    
+    padding: 12px 8px;
+    background-color: transparent;
+    border: none;
+
+    @media screen and (min-width: 768px) {
+        & {
+            display: none;
+        }
+        
+    }
+}
+
+.menu-open-btn__icon {
+    fill: var(--background-modal-icon);
+    &:hover {
+        fill: var(--main-btn-color);
+    }
+}
