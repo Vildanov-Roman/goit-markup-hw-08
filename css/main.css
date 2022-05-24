@@ -294,6 +294,10 @@ img {
   }
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .menu-open-btn {
   margin-left: auto;
   padding: 12px 8px;
@@ -314,21 +318,21 @@ img {
 }
 
 .hero {
-  background-color: var(--background-hero);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-img-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1600px;
-  margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 @media screen and (min-width: 480px) {
   .hero {
+    flex-grow: 1;
     padding-top: 116px;
     padding-bottom: 116px;
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mobil-hero-img.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../adaptive-img/mobile/hero-mob-1x.jpg);
+  }
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../adaptive-img/mobile/hero-mob-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -337,7 +341,27 @@ img {
     padding-bottom: 118px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-img-bg.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../adaptive-img/tablet/hero-tab-1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../adaptive-img/tablet/hero-tab-2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-color: var(--background-hero);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../adaptive-img/desk/hero-desk-1x.jpg);
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../adaptive-img/desk/hero-desk-2x.jpg);
   }
 }
 
@@ -550,6 +574,7 @@ img {
 
 .team__item {
   background-color: var(--background-color);
+  margin-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -557,7 +582,6 @@ img {
   .team__item {
     width: calc(50% - 30px);
     margin-right: 30px;
-    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -611,7 +635,6 @@ img {
 .team__soc--list {
   display: flex;
   justify-content: center;
-  margin-bottom: 24px;
 }
 
 .team__soc--item + .team__soc--item {
@@ -629,6 +652,7 @@ img {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 24px;
 }
 .team__soc--link:hover, .team__soc--link:focus {
   background-color: var(--bacground-hover-icon);
@@ -1262,12 +1286,6 @@ img {
     display: none;
   }
 }
-.mobile-backdrop .container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
-}
 
 .mobile-backdrop.is-hidden .mobile-modal {
   transform: translate(-50%, -50%) scale(1.5);
@@ -1276,8 +1294,8 @@ img {
 
 .mobile-modal {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: var(--background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1285,6 +1303,12 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   padding: 48px 83px 48px 40px;
+}
+.mobile-modal .container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
 }
 
 .menu-close-btn {
