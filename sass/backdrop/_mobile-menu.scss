@@ -62,9 +62,9 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
-    .modal-close-btn:hover &,
-    .modal-close-btn:focus & {
-        fill: var(--bacground-hover-icon);
+    .menu-close-btn:hover &,
+    .menu-close-btn:focus & {
+        fill: var(--main-btn-color);
     }
     
 }
@@ -85,6 +85,10 @@
 }
 
 .mobile-menu__link {
+    @media screen and (min-width: 480px) {
+        min-width: 450px;
+        min-height: 609px;
+    }
     font-family: inherit;
     font-weight: 500;
     font-size: 40px;
@@ -92,6 +96,7 @@
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--second-text-color);
+    text-decoration: none;
     
     
     &--active {
@@ -99,7 +104,8 @@
     }
 }
 
-.mobile-contacts {
+
+.mobile-contact__list {
     margin-bottom: 64px;
 }
 
@@ -108,14 +114,20 @@
 }
 
 .mobile-contact__link--phone {
+    color: var(--main-text-color);
+    text-decoration: none;
     font-family: inherit;
     font-weight: 500;
-    font-size: 34px;
-    line-height: 0.18;
+    font-size: 8vw;
     letter-spacing: 0.02em;
 
-    color: var(--main-text-color);
-
+    @media screen and (min-width: 480px) {
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+    }   
     &:active {
         color: var(--main-btn-color);
     }
@@ -129,6 +141,7 @@
     letter-spacing: 0.02em;
 
     color: var(--main-text-color);
+    text-decoration: none;
 
     &:active {
         color: var(--main-btn-color);
@@ -137,11 +150,35 @@
 
 .mobile__soc-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    
+    @media screen and (min-width: 480px) {
+        flex-wrap: nowrap;
+    }
 }
 
-.mobile__soc-item:not(:last-child) {
-    margin-right: 20px;
+.mobile__soc-item {
+    margin-right: 30px;
+    padding-bottom: 1px;
+    border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+    margin-bottom: 10px;
+}
+
+.mobile__soc-item {
+    @media screen and (min-width: 480px) {
+        border-bottom: none;
+        margin-right: 10px;
+        margin-bottom: 0;
+        padding-right: 10px;
+        padding-bottom: 0;
+    }    
+    &:not(:last-child) {  
+        @media screen and (min-width: 480px) {           
+            border-right: 1px solid rgba(33, 33, 33, 0.2);
+        }
+    }
 }
 
 .mobile__soc-link {
@@ -152,10 +189,16 @@
     letter-spacing: 0.02em;
 
     color: var(--main-btn-color);
+
+    text-decoration: none;   
 }
 
 .mobile-contact__icon {
     @media screen and (max-width: 767px) {
         display: none;
     }
+}
+
+.no-scroll {
+    overflow: hidden;
 }

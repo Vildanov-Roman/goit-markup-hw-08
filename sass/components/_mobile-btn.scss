@@ -14,7 +14,8 @@
 
 .menu-open-btn__icon {
     fill: var(--background-modal-icon);
-    &:hover {
+    &:hover,
+    &:focus {
         fill: var(--main-btn-color);
     }
 }

@@ -14,14 +14,15 @@
 }
 
 .header__nav, .header__contacts {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
         display: none;
     }
 }
 
 .header__contacts {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         margin-left: auto;
+        align-items: baseline;
     }
 }
 
@@ -71,8 +72,7 @@
 
 .list-contact {
     @media screen and (min-width: 768px) {
-        margin-left: 84px;
-        margin-top: 21px;
+      
     }
 
     @media screen and (min-width: 1200px) {
@@ -80,6 +80,24 @@
         margin-top: 0;
     }
     
+}
+
+.list-contact__item {
+    .mail {
+        padding-top: 21px;
+    }
+    .phone {
+        padding-bottom: 21px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        .mail {
+            padding-top: 32px;
+        }
+        .phone {
+            padding-bottom: 32px;
+        }
+    }
 }
 
 .list-contact__item:not(:last-child) {

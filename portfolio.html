@@ -40,12 +40,12 @@
           <nav class="nav">
             <ul class="nav__list list">
               <li class="nav__item">
-                <a href="./index.html" class="nav__link"
-                  >Студия</a
-                >
+                <a href="./index.html" class="nav__link">Студия</a>
               </li>
               <li class="nav__item">
-                <a href="./portfolio.html" class="nav__link nav__link--active">Портфолио</a>
+                <a href="./portfolio.html" class="nav__link nav__link--active"
+                  >Портфолио</a
+                >
               </li>
               <li class="nav__item">
                 <a href="#" class="nav__link">Контакты</a>
@@ -88,14 +88,12 @@
           <div class="mobile-menu">
             <ul class="mobile-menu__list list">
               <li class="mobile-menu__item">
-                <a
-                  href="./index.html"
-                  class="mobile-menu__link"
-                  >Студия</a
-                >
+                <a href="./index.html" class="mobile-menu__link">Студия</a>
               </li>
               <li class="mobile-menu__item">
-                <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--active"
+                <a
+                  href="./portfolio.html"
+                  class="mobile-menu__link mobile-menu__link--active"
                   >Портфолио</a
                 >
               </li>
@@ -149,392 +147,405 @@
         </div>
       </div>
     </header>
-    <body>
-      <section class="portfolio">
-        <div class="container">
-          <h2 class="visually-hidden">Наше портфолио</h2>
-          <ul class="portfolio__list list">
-            <li class="portfolio__item">
-              <button class="potrfolio__button potrfolio__button--current" type="button">
-                Все
-              </button>
-            </li>
-            <li class="portfolio__item">
-              <button class="potrfolio__button" type="button">Веб-сайты</button>
-            </li>
-            <li class="portfolio__item">
-              <button class="potrfolio__button" type="button">Приложения</button>
-            </li>
-            <li class="portfolio__item">
-              <button class="potrfolio__button" type="button">Дизайн</button>
-            </li>
-            <li class="portfolio__item">
-              <button class="potrfolio__button" type="button">Маркетинг</button>
-            </li>
-          </ul>
-          <ul class="projects__list list">
-            <li class="projects__item">
-              <a href="#" class="projects__link link">
-                <p class="projects__detail">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
-                </p>
-                <picture>
-                  <source
-                    srcset="
-                      ./adaptive-img/desk/portf-desk/portf1-desk-1x.jpg 1x, 
-                      ./adaptive-img/desk/portf-desk/portf1-desk-2x.jpg 2x
-                    "
-                    media="(min-width:1200px)"
-                  />
-                  <source
-                    srcset="./adaptive-img/tablet/portf-tab/portf1-tab-1x.jpg 1x, ./adaptive-img/tablet/portf-tab/portf1-tab-2x.jpg 2x
-                    "
-                    media="(min-width:768px)"
-                  />
-                  <source
-                    srcset="./adaptive-img/mobile/portfolio/portf-1-1x.jpg 1x, ./adaptive-img/mobile/portfolio/portf-1-2x.jpg 2x
-                    "
-                    media="(min-width:480px)"
-                  />
-                  <img
+    <section class="portfolio">
+      <div class="container">
+        <h2 class="visually-hidden">Наше портфолио</h2>
+        <ul class="portfolio__list list">
+          <li class="portfolio__item">
+            <button
+              class="potrfolio__button potrfolio__button--current"
+              type="button"
+            >
+              Все
+            </button>
+          </li>
+          <li class="portfolio__item">
+            <button class="potrfolio__button" type="button">Веб-сайты</button>
+          </li>
+          <li class="portfolio__item">
+            <button class="potrfolio__button" type="button">Приложения</button>
+          </li>
+          <li class="portfolio__item">
+            <button class="potrfolio__button" type="button">Дизайн</button>
+          </li>
+          <li class="portfolio__item">
+            <button class="potrfolio__button" type="button">Маркетинг</button>
+          </li>
+        </ul>
+        <ul class="projects__list list">
+          <li class="projects__item">
+            <a href="#" class="projects__link link">
+              <p class="projects__detail">
+                Ресурс предлагает комплексные предложения с разным уровнем
+                функционала и сервисов. Все это позволит посетителю получить
+                исчерпывающие сведения о компании или частном лице.
+              </p>
+              <picture>
+                <source
+                  srcset="
+                    ./adaptive-img/desk/portf-desk/portf1-desk-1x.jpg 1x,
+                    ./adaptive-img/desk/portf-desk/portf1-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./adaptive-img/tablet/portf-tab/portf1-tab-1x.jpg 1x,
+                    ./adaptive-img/tablet/portf-tab/portf1-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./adaptive-img/mobile/portfolio/portf-1-1x.jpg 1x,
+                    ./adaptive-img/mobile/portfolio/portf-1-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
                   src="./img-portfolio/laptop.jpg"
                   alt="создание
             сайтов"
                   class="projects__img"
                 />
-                </picture>                
-                <div class="projects__description">
-                  <h2 class="projects__description--title link">Технокряк</h2>
-                  <p class="projects__description--text">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
-            <li class="projects__item">
-              <a href="#" class="projects__link">
-                <p class="projects__detail" lang="en">RESERVED</p>
-                <picture>
-                  <source
-                    srcset="
-                      ./adaptive-img/desk/portf-desk/portf2-desk-1x.jpg 1x, 
-                      ./adaptive-img/desk/portf-desk/portf2-desk-2x.jpg 2x
-                    "
-                    media="(min-width:1200px)"
-                  />
-                  <source
-                    srcset="
-                      ./adaptive-img/tablet/portf-tab/portf2-tab-1x.jpg 1x,
-                      ./adaptive-img/tablet/portf-tab/portf2-tab-2x.jpg 2x
-                    "
-                    media="(min-width:768px)"
-                  />
-                  <source
-                    srcset="
-                      ./adaptive-img/mobile/portfolio/portf-2-1x.jpg 1x,
-                      ./adaptive-img/mobile/portfolio/portf-2-2x.jpg 2x
-                    "
-                    media="(min-width:480px)"
-                  />
-                  <img
+              </picture>
+              <div class="projects__description">
+                <h2 class="projects__description--title link">Технокряк</h2>
+                <p class="projects__description--text">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <a href="#" class="projects__link">
+              <p class="projects__detail" lang="en">RESERVED</p>
+              <picture>
+                <source
+                  srcset="
+                    ./adaptive-img/desk/portf-desk/portf2-desk-1x.jpg 1x,
+                    ./adaptive-img/desk/portf-desk/portf2-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./adaptive-img/tablet/portf-tab/portf2-tab-1x.jpg 1x,
+                    ./adaptive-img/tablet/portf-tab/portf2-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./adaptive-img/mobile/portfolio/portf-2-1x.jpg 1x,
+                    ./adaptive-img/mobile/portfolio/portf-2-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
                   src="./img-portfolio/basketball.jpg"
                   alt="дизайн изображений"
                   class="projects__img"
                 />
-                </picture>                 
-                <div class="projects__description">
-                  <h2 class="projects__description--title">
-                    Постер
-                    <span class="projects__description--span" lang="en"
-                      >New Orlean vs Golden Star</span
-                    >
-                  </h2>
-                  <p class="projects__description--text">Дизайн</p>
-                </div>
-              </a>
-            </li>
-            <li class="projects__item">
-              <a href="#" class="projects__link">
-                <p class="projects__detail" lang="en">RESERVED</p>
-                <picture>
-                  <source
-                    srcset="
-                      ./adaptive-img/desk/portf-desk/portf3-desk-1x.jpg 1x, 
-                      ./adaptive-img/desk/portf-desk/portf3-desk-2x.jpg 2x
-                    "
-                    media="(min-width:1200px)"
-                  />
-                  <source
-                    srcset="
-                      ./adaptive-img/tablet/portf-tab/portf3-tab-1x.jpg 1x,
-                      ./adaptive-img/tablet/portf-tab/portf3-tab-2x.jpg 2x
-                    "
-                    media="(min-width:768px)"
-                  />
-                  <source
-                    srcset="
-                      ./adaptive-img/mobile/portfolio/portf-3-1x.jpg 1x,
-                      ./adaptive-img/mobile/portfolio/portf-3-2x.jpg 2x
-                    "
-                    media="(min-width:480px)"
-                  />
-                  <img
-                    src="./img-portfolio/seafood.jpg"
-                    alt="меню ресторанов"
-                    class="projects__img"
-                  />
-                </picture>                
-                <div class="projects__description">
-                  <h2 class="projects__description--title">
-                    Ресторан
-                    <span class="projects__description--span" lang="en">Seafood</span>
-                  </h2>
-                  <p class="projects__description--text">Приложение</p>
-                </div>
-              </a>
-            </li>
-            <li class="projects__item">
-              <a href="#" class="projects__link">
-                <p class="projects__detail" lang="en">RESERVED</p>
-                <picture>
-                  <source
-                    srcset="
-                      ./adaptive-img/desk/portf-desk/portf4-desk-1x.jpg 1x, 
-                      ./adaptive-img/desk/portf-desk/portf4-desk-2x.jpg 2x
-                    "
-                    media="(min-width:1200px)"
-                  />
-                  <source
-                    srcset="
-                      ./adaptive-img/tablet/portf-tab/portf4-tab-1x.jpg 1x,
-                      ./adaptive-img/tablet/portf-tab/portf4-tab-2x.jpg 2x
-                    "
-                    media="(min-width:768px)"
-                  />
-                  <source
-                    srcset="
-                      ./adaptive-img/mobile/portfolio/portf-4-1x.jpg 1x,
-                      ./adaptive-img/mobile/portfolio/portf-4-2x.jpg 2x
-                    "
-                    media="(min-width:480px)"
-                  />
-                  <img
-                    src="./img-portfolio/earphons.jpg"
-                    alt="маркетинг"
-                    class="projects__img"
-                  />
-                </picture>                
-                <div class="projects__description">
-                  <h2 class="projects__description--title list">
-                    Проект
-                    <span class="projects__description--span" lang="en">Prime</span>
-                  </h2>
-                  <p class="projects__description--text">Маркетинг</p>
-                </div>
-              </a>
-            </li>
-            <li class="projects__item">
-              <a href="#" class="projects__link">
-                <p class="projects__detail" lang="en">RESERVED</p>
-                <picture>
-                  <source
-                    srcset="
-                      ./adaptive-img/desk/portf-desk/portf5-desk-1x.jpg 1x, 
-                      ./adaptive-img/desk/portf-desk/portf5-desk-2x.jpg 2x
-                    "
-                    media="(min-width:1200px)"
-                  />
-                  <source
-                    srcset="
-                      ./adaptive-img/tablet/portf-tab/portf5-tab-1x.jpg 1x,
-                      ./adaptive-img/tablet/portf-tab/portf5-tab-2x.jpg 2x
-                    "
-                    media="(min-width:768px)"
-                  />
-                  <source
-                    srcset="
-                      ./adaptive-img/mobile/portfolio/portf-5-1x.jpg 1x,
-                      ./adaptive-img/mobile/portfolio/portf-5-2x.jpg 2x
-                    "
-                    media="(min-width:480px)"
-                  />
-                  <img
-                    src="./img-portfolio/boxes.jpg"
-                    alt="разработка приложений"
-                    class="projects__img"
-                  />
-                </picture>                
-                <div class="projects__description">
-                  <h2 class="projects__description--title">
-                    Проект
-                    <span class="projects__description--span" lang="en">Boxes</span>
-                  </h2>
-                  <p class="projects__description--text">Приложение</p>
-                </div>
-              </a>
-            </li>
-            <li class="projects__item">
-              <a href="#" class="projects__link">
-                <p class="projects__detail" lang="en">RESERVED</p>
-                <picture>
-                  <source
-                    srcset="
-                      ./adaptive-img/desk/portf-desk/portf6-desk-1x.jpg 1x, 
-                      ./adaptive-img/desk/portf-desk/portf6-desk-2x.jpg 2x
-                    "
-                    media="(min-width:1200px)"
-                  />
-                  <source
-                    srcset="
-                      ./adaptive-img/tablet/portf-tab/portf6-tab-1x.jpg 1x,
-                      ./adaptive-img/tablet/portf-tab/portf6-tab-2x.jpg 2x
-                    "
-                    media="(min-width:768px)"
-                  />
-                  <source
-                    srcset="
-                      ./adaptive-img/mobile/portfolio/portf-6-1x.jpg 1x,
-                      ./adaptive-img/mobile/portfolio/portf-6-2x.jpg 2x
-                    "
-                    media="(min-width:480px)"
-                  />
-                  <img
-                    src="./img-portfolio/monitor.jpg"
-                    alt="разработка сайтов"
-                    class="projects__img"
-                  />
-                </picture> 
-                <div class="projects__description">
-                  <h2 class="projects__description--title" lang="en">
-                    Inspiration has no Borders
-                  </h2>
-                  <p class="projects__description--text">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
-            <li class="projects__item">
-              <a href="#" class="projects__link">
-                <p class="projects__detail" lang="en">RESERVED</p>
-                <picture>
-                  <source
-                    srcset="
-                      ./adaptive-img/desk/portf-desk/portf7-desk-1x.jpg 1x, 
-                      ./adaptive-img/desk/portf-desk/portf7-desk-2x.jpg 2x
-                    "
-                    media="(min-width:1200px)"
-                  />
-                  <source
-                    srcset="
-                      ./adaptive-img/tablet/portf-tab/portf7-tab-1x.jpg 1x,
-                      ./adaptive-img/tablet/portf-tab/portf7-tab-2x.jpg 2x
-                    "
-                    media="(min-width:768px)"
-                  />
-                  <source
-                    srcset="
-                      ./adaptive-img/mobile/portfolio/portf-7-1x.jpg 1x,
-                      ./adaptive-img/mobile/portfolio/portf-7-2x.jpg 2x
-                    "
-                    media="(min-width:480px)"
-                  />
-                  <img
-                    src="./img-portfolio/magazine.jpg"
-                    alt="дизайн переидики"
-                    class="projects__img"
-                  />
-                </picture>                
-                <div class="projects__description">
-                  <h2 class="projects__description--title">
-                    Издание
-                    <span class="projects__description--span" lang="en"
-                      >Limited Edition</span
-                    >
-                  </h2>
-                  <p class="projects__description--text">Дизайн</p>
-                </div>
-              </a>
-            </li>
-            <li class="projects__item">
-              <a href="#" class="projects__link">
-                <p class="projects__detail" lang="en">RESERVED</p>   
-                <picture>
-                  <source
-                    srcset="
-                      ./adaptive-img/desk/portf-desk/portf8-desk-1x.jpg 1x, 
-                      ./adaptive-img/desk/portf-desk/portf8-desk-2x.jpg 2x
-                    "
-                    media="(min-width:1200px)"
-                  />
-                  <source
-                    srcset="
-                      ./adaptive-img/tablet/portf-tab/portf8-tab-1x.jpg 1x,
-                      ./adaptive-img/tablet/portf-tab/portf8-tab-2x.jpg 2x
-                    "
-                    media="(min-width:768px)"
-                  />
-                  <source
-                    srcset="
-                      ./adaptive-img/mobile/portfolio/portf-8-1x.jpg 1x,
-                      ./adaptive-img/mobile/portfolio/portf-8-2x.jpg 2x
-                    "
-                    media="(min-width:480px)"
-                  />
-                  <img
-                    src="./img-portfolio/lab.jpg"
-                    alt="маркетинг"
-                    class="projects__img"
-                  />
-                </picture> 
-                <div class="projects__description">
-                  <h2 class="projects__description--title">
-                    Проект
-                    <span class="projects__description--span" lang="en">LAB</span>
-                  </h2>
-                  <p class="projects__description--text">Маркетинг</p>
-                </div>
-              </a>
-            </li>
-            <li class="projects__item">
-              <a href="#" class="projects__link">
-                <p class="projects__detail" lang="en">RESERVED</p>
-                <picture>
-                  <source
-                    srcset="
-                      ./adaptive-img/desk/portf-desk/portf9-desk-1x.jpg 1x, 
-                      ./adaptive-img/desk/portf-desk/portf9-desk-2x.jpg 2x
-                    "
-                    media="(min-width:1200px)"
-                  />
-                  <source
-                    srcset="
-                      ./adaptive-img/tablet/portf-tab/portf9-tab-1x.jpg 1x,
-                      ./adaptive-img/tablet/portf-tab/portf9-tab-2x.jpg 2x
-                    "
-                    media="(min-width:768px)"
-                  />
-                  <source
-                    srcset="
-                      ./adaptive-img/mobile/portfolio/portf-9-1x.jpg 1x,
-                      ./adaptive-img/mobile/portfolio/portf-9-2x.jpg 2x
-                    "
-                    media="(min-width:480px)"
-                  />
-                  <img
-                    src="./img-portfolio/groun-business.jpg"
-                    alt="приложения для бизнеса"
-                    class="projects__img"
-                  />
-                </picture>                 
-                <div class="projects__description">
-                  <h2 class="projects__description--title" lang="en">Growing Business</h2>
-                  <p class="projects__description--text">Приложение</p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
+              </picture>
+              <div class="projects__description">
+                <h2 class="projects__description--title">
+                  Постер
+                  <span class="projects__description--span" lang="en"
+                    >New Orlean vs Golden Star</span
+                  >
+                </h2>
+                <p class="projects__description--text">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <a href="#" class="projects__link">
+              <p class="projects__detail" lang="en">RESERVED</p>
+              <picture>
+                <source
+                  srcset="
+                    ./adaptive-img/desk/portf-desk/portf3-desk-1x.jpg 1x,
+                    ./adaptive-img/desk/portf-desk/portf3-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./adaptive-img/tablet/portf-tab/portf3-tab-1x.jpg 1x,
+                    ./adaptive-img/tablet/portf-tab/portf3-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./adaptive-img/mobile/portfolio/portf-3-1x.jpg 1x,
+                    ./adaptive-img/mobile/portfolio/portf-3-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  src="./img-portfolio/seafood.jpg"
+                  alt="меню ресторанов"
+                  class="projects__img"
+                />
+              </picture>
+              <div class="projects__description">
+                <h2 class="projects__description--title">
+                  Ресторан
+                  <span class="projects__description--span" lang="en"
+                    >Seafood</span
+                  >
+                </h2>
+                <p class="projects__description--text">Приложение</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <a href="#" class="projects__link">
+              <p class="projects__detail" lang="en">RESERVED</p>
+              <picture>
+                <source
+                  srcset="
+                    ./adaptive-img/desk/portf-desk/portf4-desk-1x.jpg 1x,
+                    ./adaptive-img/desk/portf-desk/portf4-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./adaptive-img/tablet/portf-tab/portf4-tab-1x.jpg 1x,
+                    ./adaptive-img/tablet/portf-tab/portf4-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./adaptive-img/mobile/portfolio/portf-4-1x.jpg 1x,
+                    ./adaptive-img/mobile/portfolio/portf-4-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  src="./img-portfolio/earphons.jpg"
+                  alt="маркетинг"
+                  class="projects__img"
+                />
+              </picture>
+              <div class="projects__description">
+                <h2 class="projects__description--title list">
+                  Проект
+                  <span class="projects__description--span" lang="en"
+                    >Prime</span
+                  >
+                </h2>
+                <p class="projects__description--text">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <a href="#" class="projects__link">
+              <p class="projects__detail" lang="en">RESERVED</p>
+              <picture>
+                <source
+                  srcset="
+                    ./adaptive-img/desk/portf-desk/portf5-desk-1x.jpg 1x,
+                    ./adaptive-img/desk/portf-desk/portf5-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./adaptive-img/tablet/portf-tab/portf5-tab-1x.jpg 1x,
+                    ./adaptive-img/tablet/portf-tab/portf5-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./adaptive-img/mobile/portfolio/portf-5-1x.jpg 1x,
+                    ./adaptive-img/mobile/portfolio/portf-5-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  src="./img-portfolio/boxes.jpg"
+                  alt="разработка приложений"
+                  class="projects__img"
+                />
+              </picture>
+              <div class="projects__description">
+                <h2 class="projects__description--title">
+                  Проект
+                  <span class="projects__description--span" lang="en"
+                    >Boxes</span
+                  >
+                </h2>
+                <p class="projects__description--text">Приложение</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <a href="#" class="projects__link">
+              <p class="projects__detail" lang="en">RESERVED</p>
+              <picture>
+                <source
+                  srcset="
+                    ./adaptive-img/desk/portf-desk/portf6-desk-1x.jpg 1x,
+                    ./adaptive-img/desk/portf-desk/portf6-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./adaptive-img/tablet/portf-tab/portf6-tab-1x.jpg 1x,
+                    ./adaptive-img/tablet/portf-tab/portf6-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./adaptive-img/mobile/portfolio/portf-6-1x.jpg 1x,
+                    ./adaptive-img/mobile/portfolio/portf-6-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  src="./img-portfolio/monitor.jpg"
+                  alt="разработка сайтов"
+                  class="projects__img"
+                />
+              </picture>
+              <div class="projects__description">
+                <h2 class="projects__description--title" lang="en">
+                  Inspiration has no Borders
+                </h2>
+                <p class="projects__description--text">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <a href="#" class="projects__link">
+              <p class="projects__detail" lang="en">RESERVED</p>
+              <picture>
+                <source
+                  srcset="
+                    ./adaptive-img/desk/portf-desk/portf7-desk-1x.jpg 1x,
+                    ./adaptive-img/desk/portf-desk/portf7-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./adaptive-img/tablet/portf-tab/portf7-tab-1x.jpg 1x,
+                    ./adaptive-img/tablet/portf-tab/portf7-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./adaptive-img/mobile/portfolio/portf-7-1x.jpg 1x,
+                    ./adaptive-img/mobile/portfolio/portf-7-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  src="./img-portfolio/magazine.jpg"
+                  alt="дизайн переидики"
+                  class="projects__img"
+                />
+              </picture>
+              <div class="projects__description">
+                <h2 class="projects__description--title">
+                  Издание
+                  <span class="projects__description--span" lang="en"
+                    >Limited Edition</span
+                  >
+                </h2>
+                <p class="projects__description--text">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <a href="#" class="projects__link">
+              <p class="projects__detail" lang="en">RESERVED</p>
+              <picture>
+                <source
+                  srcset="
+                    ./adaptive-img/desk/portf-desk/portf8-desk-1x.jpg 1x,
+                    ./adaptive-img/desk/portf-desk/portf8-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./adaptive-img/tablet/portf-tab/portf8-tab-1x.jpg 1x,
+                    ./adaptive-img/tablet/portf-tab/portf8-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./adaptive-img/mobile/portfolio/portf-8-1x.jpg 1x,
+                    ./adaptive-img/mobile/portfolio/portf-8-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  src="./img-portfolio/lab.jpg"
+                  alt="маркетинг"
+                  class="projects__img"
+                />
+              </picture>
+              <div class="projects__description">
+                <h2 class="projects__description--title">
+                  Проект
+                  <span class="projects__description--span" lang="en">LAB</span>
+                </h2>
+                <p class="projects__description--text">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <a href="#" class="projects__link">
+              <p class="projects__detail" lang="en">RESERVED</p>
+              <picture>
+                <source
+                  srcset="
+                    ./adaptive-img/desk/portf-desk/portf9-desk-1x.jpg 1x,
+                    ./adaptive-img/desk/portf-desk/portf9-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./adaptive-img/tablet/portf-tab/portf9-tab-1x.jpg 1x,
+                    ./adaptive-img/tablet/portf-tab/portf9-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./adaptive-img/mobile/portfolio/portf-9-1x.jpg 1x,
+                    ./adaptive-img/mobile/portfolio/portf-9-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  src="./img-portfolio/groun-business.jpg"
+                  alt="приложения для бизнеса"
+                  class="projects__img"
+                />
+              </picture>
+              <div class="projects__description">
+                <h2 class="projects__description--title" lang="en">
+                  Growing Business
+                </h2>
+                <p class="projects__description--text">Приложение</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
     <footer class="footer">
       <div class="contacts container">
         <div class="addresses">

@@ -17,9 +17,14 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;    
+    flex-wrap: wrap;
+    align-items: center; 
+    
+    @media screen and (min-width: 480px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .checkbox-icon {
@@ -31,14 +36,17 @@
     height: 15px;
     border: 2px solid var(--second-text-color);
     border-radius: 3px;
-    margin-right: 7px;
-    display: flex;
+    margin-right: 3px;
     align-items: center;
     justify-content: center;    
+    @media screen and (min-width: 480px) {
+        margin-left: 0;
+    }
 }
 
 .checkbox-input:focus + .checkbox-text .checkbox-span {
     border-color: var(--bacground-hover-icon);
+    
     
 }
 
