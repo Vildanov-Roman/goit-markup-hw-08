@@ -6,20 +6,23 @@
     position: relative;
     background-color: var(--background-color);
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-    }
-    
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
 }
 
 .projects__link {
     text-decoration: none;
+    text-transform: none;
     position: relative;
     overflow: hidden;
     
-    
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    flex-grow: 1;
+
 }
 
 .projects__detail {
@@ -49,7 +52,8 @@
     
     }
     @media screen and (min-width: 768px) {
-        padding: 49px 24px 77px 24px;
+       padding-top: 49px;
+        
     }
     @media screen and (min-width: 1200px) {
         padding: 63px 24px;
@@ -59,6 +63,7 @@
 .projects__list {
     display: block;
     align-items: center;
+    
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -68,6 +73,7 @@
 }
 
 .projects__item {  
+    
     &:not(:last-child){
         margin-bottom: 30px;
     }
@@ -76,6 +82,10 @@
         margin-right: 30px;
         margin-bottom: 30px;
         &:first-child .projects__description {
+            
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
             // padding: 20px 24px 56px 24px;
         }
         &:last-child {
@@ -88,9 +98,9 @@
         margin-right: 30px;
         margin-bottom: 30px;
         width: calc(100% / 3 - 30px);
-        &:first-child .projects__description {
-            padding: 20px 24px;
-        }
+        // &:first-child .projects__description {
+        //     padding: 20px 24px;
+        
         &:nth-child(3n+3) {
             margin-right: 0;
         }
@@ -121,6 +131,7 @@
 }
 
 .projects__description {
+    
 
 }
 
