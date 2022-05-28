@@ -10,6 +10,7 @@
     @media screen and (min-width: 1200px) {
         margin-bottom: 0;
         align-items: baseline;
+        margin-right: auto;
     }
 }
 
@@ -45,10 +46,7 @@
 
 .soc {
     justify-content: center;
-
-    @media screen and (min-width: 1200px) {
-        margin-right: 93px;
-    }
+    
 }
 
 .footer-logo {
