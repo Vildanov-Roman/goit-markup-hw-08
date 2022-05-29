@@ -21,9 +21,7 @@
     margin-bottom: 30px;
     @media screen and (min-width: 768px) {
         width: calc(100% / 2 - 30px);
-        &:nth-child(2n + 1) {
-            margin-right: 30px;
-        }
+        margin-right: 30px;
     }
     @media screen and (min-width: 1200px) {
         width: calc(100% / 4 - 30px);
@@ -53,10 +51,6 @@
 
 .achivements__item--title {
     @include font(700, 14px, 1.14, 0.03em);
-    // font-size: 14px;
-    // font-weight: 700;
-    // line-height: 1.14;
-    // letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--second-text-color); 
     margin-bottom: 10px;

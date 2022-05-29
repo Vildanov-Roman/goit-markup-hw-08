@@ -151,19 +151,26 @@
 .mobile__soc-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    
     
     @media screen and (min-width: 480px) {
         flex-wrap: nowrap;
     }
 }
 
-.mobile__soc-item {
+.mobile__soc-item {   
     margin-right: 30px;
     padding-bottom: 1px;
     border-bottom: 1px solid rgba(33, 33, 33, 0.2);
     margin-bottom: 10px;
+    width: calc(100% / 2 - 30px);
+    margin-right: 30px;
+    &:nth-child(2n) {
+        margin-right: 0;
+    }
+
 }
 
 .mobile__soc-item {

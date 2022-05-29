@@ -22,15 +22,17 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     padding: 40px;
+    width: 96vw;
+    height: 100vh;
     
     @media screen and (min-width: 480px) {
-        min-width: 450px;
-        min-height: 609px;
+        width: 450px;
+        height: 609px;
     }
 
     @media screen and (min-width: 1200px) {
-        min-width: 528px;
-        min-height: 581px;
+        width: 528px;
+        height: 581px;
     }
 
 }
