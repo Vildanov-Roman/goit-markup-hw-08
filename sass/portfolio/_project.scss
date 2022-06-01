@@ -14,14 +14,18 @@
 .projects__link {
     text-decoration: none;
     text-transform: none;
-    position: relative;
-    overflow: hidden;
+    
     
     display: flex;
     height: 100%;
     flex-direction: column;
     flex-grow: 1;
 
+}
+
+.projects__about {
+    position: relative;
+    overflow: hidden;
 }
 
 .projects__detail {
@@ -42,14 +46,13 @@
     line-height: 1.56;
     letter-spacing: 0.03em;
     color: var(--hero-text-color);
-    background-color: var(--background-color-detail);  
-    
+    background-color: var(--background-color-detail);   
     .projects__link:hover &,
     .projects__link:focus & {
         z-index: 0;    
         transform: translate(0);
-    
-    }
+
+    } 
     @media screen and (min-width: 768px) {
         padding-top: 49px;
         

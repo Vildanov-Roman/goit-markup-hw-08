@@ -1328,7 +1328,7 @@ img {
 }
 
 .mobile-backdrop.is-hidden .mobile-modal {
-  transform: translate(-50%, -50%) scale(1.5);
+  transform: translate(-50%, -50%) scale(0.8);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1591,12 +1591,15 @@ img {
 .projects__link {
   text-decoration: none;
   text-transform: none;
-  position: relative;
-  overflow: hidden;
   display: flex;
   height: 100%;
   flex-direction: column;
   flex-grow: 1;
+}
+
+.projects__about {
+  position: relative;
+  overflow: hidden;
 }
 
 .projects__detail {

@@ -16,7 +16,7 @@
 }
 
 .mobile-backdrop.is-hidden .mobile-modal {
-    transform: translate(-50%, -50%) scale(1.5);
+    transform: translate(-50%, -50%) scale(0.8);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -31,6 +31,7 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     padding: 48px 83px 48px 40px;
+
     .container {
         display: flex;
         flex-direction: column;
